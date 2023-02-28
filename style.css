@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  font-size: 62.5%;
+  --bg-img: hsla(240, 9%, 89%, 1);
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+}
+
+.container {
+  display: flex;
+  /* flex-direction: column; */
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  /* width: clamp(50rem, 26rem + 30vw, 36rem);*/
+  gap: clamp(5rem, 5rem + 8vw, 19.2rem);
+  padding: 30rem 2rem;
+  /* display: flex;
+  
+  justify-content: space-between;
+  width: 82.1rem;
+  height: 33.6rem;
+  height: 100vh; */
+}
+span {
+  align-content: center;
+}
+
+.timer {
+  font-size: 12.6rem;
+}
+
+.time {
+  margin-bottom: 4.8rem;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+}
+.cards{
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 3.2rem;
+}
+
+.cards div {
+  padding: 4.8rem;
+  border-radius: 2.4rem;
+  background-color: var(--bg-img);
+}
+
+.card1:hover, 
+.card2:hover,
+.card3:hover,
+.card4:hover {
+  background: #02799D;
+}
+
+.card1.selected{
+  background: #02799D;
+}
+.card2.selected {
+  background: #02799D;
+}
+.card3.selected {
+  background: #02799D;
+}
+.card4.selected {
+  background: #02799D;
+}
+
+
+@media (max-width: 910px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 2rem;
+    min-width: 360px;
+  }
+  .time {
+    font-size: 10rem;
+  }
+}
+
+
+
+
+
+
